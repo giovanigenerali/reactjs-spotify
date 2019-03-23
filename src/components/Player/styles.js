@@ -62,10 +62,14 @@ export const Time = styled.div`
   display: flex;
   align-items: center;
   margin-top: 5px;
+  justify-content: space-between;
+  width: 580px;
+  min-width: 580px;
 
   span {
     font-size: 11px;
     color: #b3b3b3;
+    min-width: 24px;
   }
 `;
 

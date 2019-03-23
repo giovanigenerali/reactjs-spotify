@@ -99,7 +99,7 @@ export const SongItem = styled.tr`
     font-size: 13px;
     padding: 0 10px;
     line-height: 40px;
-    background: ${props => (props.selected ? '#282828' : 'transparent')};
+    background: ${props => (props.playing ? '#282828' : 'transparent')};
     color: ${props => (props.playing ? '#1db854' : '#fff')};
 
     &:first-child {
