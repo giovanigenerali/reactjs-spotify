@@ -69,7 +69,6 @@ export const NewPlaylist = styled.button`
   display: flex;
   align-items: center;
   padding: 15px 25px;
-  cursor: pointer;
 
   &:hover {
     color: #fff;

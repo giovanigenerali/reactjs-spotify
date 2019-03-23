@@ -22,6 +22,10 @@ const GlobalStyle = createGlobalStyle`
     color: #fff;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   .rc-slider-handle {
     display: none;
   }

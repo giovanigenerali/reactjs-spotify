@@ -15,8 +15,7 @@
     {
       "id": 3,
       "title": "Salad Days",
-      "description":
-        "Animar seu dia nunca foi tão fácil, ouça essas músicas e tenha um dia mais feliz!",
+      "description": "Animar seu dia nunca foi tão fácil, ouça essas músicas e tenha um dia mais feliz!",
       "thumbnail": "https://s3-sa-east-1.amazonaws.com/gonative/alok.jpg"
     },
     {
@@ -39,19 +38,19 @@
     {
       "id": 1,
       "title": "One Step Closer",
-      "author": "Linkin Park",
-      "album": "Hybrid Theory",
+      "author": "Foo Fighters",
+      "album": "Album 1",
       "file": "https://s3-sa-east-1.amazonaws.com/gonative/2.mp3",
-      "thumbnail": "https://s3-sa-east-1.amazonaws.com/gonative/linkin_park.jpg",
+      "thumbnail": "https://s3-sa-east-1.amazonaws.com/gonative/foo_fighters.jpg",
       "playlistId": 2
     },
     {
       "id": 2,
       "title": "With You",
-      "author": "Linkin Park",
-      "album": "Hybrid Theory",
+      "author": "Alok",
+      "album": "Album Alok",
       "file": "https://s3-sa-east-1.amazonaws.com/gonative/3.mp3",
-      "thumbnail": "https://s3-sa-east-1.amazonaws.com/gonative/linkin_park.jpg",
+      "thumbnail": "https://s3-sa-east-1.amazonaws.com/gonative/alok.jpg",
       "playlistId": 3
     },
     {
