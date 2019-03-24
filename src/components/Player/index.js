@@ -35,7 +35,7 @@ const Player = ({
   setVolume,
 }) => (
   <Container>
-    {!!player.currentSong && (
+    {!!player.currentSong.file && (
       <Sound
         url={player.currentSong.file}
         playStatus={player.status}
@@ -47,7 +47,7 @@ const Player = ({
     )}
 
     <Current>
-      {!!player.currentSong && (
+      {!!player.currentSong.file && (
         <Fragment>
           <img src={player.currentSong.thumbnail} alt={player.currentSong.title} />
           <div>
@@ -138,7 +138,7 @@ Player.propTypes = {
 };
 
 function msToTime(duration) {
-  if (!duration) return null;
+  if (!duration) return '';
 
   let seconds = parseInt((duration / 1000) % 60, 10);
   const minutes = parseInt((duration / (1000 * 60)) % 60, 10);
@@ -147,6 +147,7 @@ function msToTime(duration) {
 
   return `${minutes}:${seconds}`;
 }
+
 const mapStateToProps = state => ({
   player: state.player,
   position: msToTime(state.player.position),

@@ -85,7 +85,11 @@ class Playlist extends Component {
                 {playlist.songs.length > 1 ? 'músicas' : 'música'}
               </p>
             )}
-            <button type="button">Play</button>
+            {!!playlist.songs && (
+              <button type="button" onClick={() => loadSong(playlist.songs[0], playlist.songs)}>
+                Play
+              </button>
+            )}
           </div>
         </Header>
 
@@ -122,7 +126,7 @@ class Playlist extends Component {
                   <td>{song.title}</td>
                   <td>{song.author}</td>
                   <td>{song.album}</td>
-                  <td>0:00</td>
+                  <td>{song.duration}</td>
                 </SongItem>
               ))
             )}

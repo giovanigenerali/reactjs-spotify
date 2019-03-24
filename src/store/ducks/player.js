@@ -15,13 +15,13 @@ export const Types = {
 
 /** Reducers */
 const INITIAL_STATE = {
-  currentSong: null,
+  currentSong: {},
   list: [],
-  status: Sound.status.PLAYING,
-  position: null,
-  positionShown: null,
-  duration: null,
-  volume: 100,
+  status: null,
+  position: 0,
+  positionShown: 0,
+  duration: 0,
+  volume: 50,
 };
 
 export default function player(state = INITIAL_STATE, action) {
@@ -35,7 +35,7 @@ export default function player(state = INITIAL_STATE, action) {
         position: 0,
       };
     case Types.PLAY:
-      return { ...state, status: Sound.status.PLAYING, position: 0 };
+      return { ...state, status: Sound.status.PLAYING };
     case Types.PAUSE:
       return { ...state, status: Sound.status.PAUSED };
     case Types.PREV: {
@@ -71,7 +71,7 @@ export default function player(state = INITIAL_STATE, action) {
     case Types.HANDLE_POSITION:
       return { ...state, positionShown: state.duration * action.payload.percent };
     case Types.SET_POSITION:
-      return { ...state, position: state.duration * action.payload.percent, positionShown: null };
+      return { ...state, position: state.duration * action.payload.percent, positionShown: 0 };
     case Types.SET_VOLUME:
       return { ...state, volume: action.payload.volume };
     default:
